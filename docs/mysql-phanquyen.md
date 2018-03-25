@@ -34,6 +34,14 @@ FLUSH PRIVILEGES;
 
 ## Phần 2: Gán quyền User (Bổ sung)
 
+__Liệt kê các User hiện có trên MySQL__
+
+```
+select User from mysql.user;
+
+select User,Host from mysql.user;
+```
+
 __Danh sách các lệnh thường dùng để gán quyền cho user mới:__
 
 - `ALL PRIVILEGES` – như ở trên ta thấy, lệnh này cho phép MySQL user thực hiện toàn quyền trên databases (hoặc 1 vài db được thiết lập)
