@@ -85,3 +85,4 @@ DROP USER 'demo'@'localhost';
 
 ## Nguồn
 http://how.vndemy.com/databases/209-huong-dan-tao-user-va-gan-quyen-trong-mysql/
+https://www.digitalocean.com/community/tutorials/how-to-create-a-new-user-and-grant-permissions-in-mysql
