@@ -63,6 +63,14 @@ GRANT [type of permission] ON [database name].[table name] TO '[username]'@'loca
 
 > Cập nhật hay thay đổi quyền hãy dùng lệnh Flush Privileges đảm bảo các thay đổi có hiệu lực.
 
+__Kiểm tra quyền trên 1 User__
+
+```
+SHOW GRANTS FOR username;
+
+VD: SHOW GRANTS FOR 'testdb2'@'%';
+```
+
 __Thu hồi lại quyền của user, sử dụng lệnh REVOKE:__
 
 ```
