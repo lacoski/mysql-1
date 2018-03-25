@@ -84,7 +84,8 @@ mysql> select User,Host from mysql.user;
 +---------+-----------------------+
 ```
 
-### Bước 3: Truy cập MySQL từ xa thông qua `MySQL GUI Tools`
+### Bước 3: Truy cập MySQL từ xa thông qua GUI và CMD
+#### 3.1 - Tùy chọn 1: Sử dụng `MySQL GUI Tools`
 > Chỉ hỗ trợ trên Windows
 
 __Tải và cài đặt MySQL GUI Tools__
@@ -131,3 +132,29 @@ __Kết quả__
 __Bước 5: Truy cập kết nối__
 
 ![](../images/mysql-remote-access-8.PNG)
+
+
+#### 3.2 - Tùy chọn 2: Sử dụng CMD
+> Sử dụng Trên Linux
+
+> Yêu cầu cài sẵn mysql client
+
+__Kết nối database__
+```
+# mysql -u <user> -p -h <Ip hoặc Domain>
+Enter password:
+```
+
+__Kết quả__
+
+```
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 48
+Server version: 5.6.39 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2017, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> 
+```
