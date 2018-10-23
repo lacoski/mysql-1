@@ -24,7 +24,7 @@ rpm -ivh mysql-community-release-el7-5.noarch.rpm
 __Cài đặt mysql server thông qua yum__
 
 ```
-yum install mysql-server
+yum install mysql-server -y
 ```
 
 ### Bước 3: Thao tác với Mysql server
